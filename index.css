@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    ;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+}
+
+.score-div {
+    font-size: 0.8rem;
+    color: red;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    right: 50px;
+    top: 10px;
+}
+
+#score {
+    font-family: "Tiny5", sans-serif
+}
+
+.Title {
+    font-size: 1.5rem;
+    font-family: "Sixtyfour Convergence", sans-serif;
+}
+
+.Rules {
+    display: none;
+    font-size: 1rem;
+    margin-top: 50px;
+}
+
+
+.win {
+    font-size: 50px;
+    font-weight: bold;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation-name: rainbow;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes rainbow {
+    0% {
+        background: linear-gradient(to left, red, orange, yellow, green, blue, indigo);
+
+        -webkit-background-clip: text;
+    }
+
+    25% {
+        background: linear-gradient(to left, orange, yellow, green, blue, indigo, red);
+
+        -webkit-background-clip: text;
+    }
+
+    50% {
+        background: linear-gradient(to left, yellow, green, blue, indigo, red, orange);
+        -webkit-background-clip: text;
+    }
+
+    75% {
+        background: linear-gradient(to left, green, blue, indigo, red, orange, yellow);
+        -webkit-background-clip: text;
+    }
+
+    100% {
+        background: linear-gradient(to left, blue, indigo, red, orange, yellow, green);
+        -webkit-background-clip: text;
+    }
+}
+
+.Game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+    width: 500px;
+    height: 150px;
+    background-color: rgb(32, 32, 32);
+    box-shadow: 0 8px 20px 0 rgb(255, 0, 0, 0.7);
+    border-radius: 20px;
+}
+
+.user-input-div {
+    width: 450px;
+    height: 50px;
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    justify-content: center;
+}
+
+#user-input {
+    display: none;
+    border-style: none;
+    background-color: transparent;
+    font-size: 2rem;
+}
+
+#user-input:focus {
+    border-style: none;
+    outline: none;
+}
+
+.Answer {
+    display: none;
+}
+
+.loading {
+    display: block;
+    color: red;
+}
+
+.ans-btn {
+    margin: 20px 0px;
+    height: 30px;
+    width: 150px;
+    font-size: 1rem;
+    color: white;
+    background-color: red;
+    border-style: none;
+}
+
+.ans-btn:hover {
+    background-color: rgb(130, 0, 0);
+}

@@ -5,10 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess The Number</title>
+    <link href="./index.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Dancing+Script:wght@400..700&family=Lavishly+Yours&family=Lobster&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&family=Sixtyfour+Convergence&family=Tiny5&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <div class="score-div">
+        <h1>Score </h1>
+        <div class="score-board">
+            <h1 id="score">00</h1>
+        </div>
+    </div>
+    <main>
+        <div class="Title">
+            <h1>Guess The Number</h1>
+        </div>
 
+        <div class="Rules" id="Rules-div">
+            <h1 class="rule-1">Try and guess the Number 1 - 100</h1>
+            <h1 class="rule-1">If you get it correct you gain 10 points</h1>
+            <h1 class="rule-1">200 points <span class="win">WINS!!</span></h1>
+        </div>
+
+        <div class="Game" id="game">
+            <div class="user-input-div">
+                <input id="user-input" type="text" placeholder="Guess A Number 1-100">
+                <div class="loading">
+                    <h1>
+                        <span class="dot-1">.</span>
+                        <span class="dot-2">.</span>
+                        <span class="dot-3">.</span>
+                    </h1>
+                </div>
+                <div class="Answer">
+                    <h1>Answer</h1>
+                </div>
+            </div>
+            <button class="ans-btn">Check</button>
+        </div>
+    </main>
+
+    <script src="./index.js"></script>
 </body>
 
 </html>
